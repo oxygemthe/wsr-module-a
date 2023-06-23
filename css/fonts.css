@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Geologica;
+    src: url("../fonts/Geologica.ttf") format("woff2");
+}
+
+* {
+    font-family: Geologica, sans-serif;
+}

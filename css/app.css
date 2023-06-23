@@ -1,10 +1,89 @@
+@import "fonts.css";
+@import "grid.css";
+@import "slider.css";
+@import "cards.css";
+@import "buttons.css";
+@import "../icons/css/all.min.css";
+
 /* Переменные */
 :root {
+    --bg-light: #efefef;
+    --red: #de000e;
+    --dark-red: #c7000d;
+    --light-red: #ff6c6c;
+    --xl-max: 1183px;
+    --xl-min: 992px;
+    --l-max: 991px;
+    --l-min: 769px;
+    --m-max: 768px;
+    --m-min: 430px;
+    --s-max: 429px;
+}
 
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Шапка */
+header {
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+}
+
+header .logo {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 4px;
+    text-decoration: none;
+}
+
+header .logo .header {
+    line-height: 1;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #de000e;
+    margin-top: 15px;
+}
+
+header .logo img {
+    width: 80px;
+}
+
+header .links {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+    list-style: none;
+    margin-left: auto;
+}
+
+header .links .link {
+    color: #000;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+header .links .link:hover {
+    text-shadow: 0 0 4px rgba(255, 0, 0, 0.4);
 }
 
 /* Адаптация */
 
 @media (max-width: 768px) {
-
+    .container {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
 }

@@ -1,0 +1,77 @@
+.slider {
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.slider .slider-wrapper {
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    gap: 10px;
+    overflow: hidden;
+}
+
+@media (min-width: 769px) and (max-width: 1183px) {
+    .slider .slider-wrapper .slide:nth-child(-n + 1) {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .slider .slider-wrapper .slide:nth-child(-n + 2) {
+        display: none;
+    }
+}
+
+.slider .slide {
+    display: block;
+    padding: 10px;
+}
+
+.slider .slide.active {
+    border: 2px solid var(--red);
+    border-radius: 8px;
+}
+
+.slider-btn-prev {
+    position: absolute;
+    left: -60px;
+}
+
+.slider-btn-next {
+    position: absolute;
+    right: -60px;
+}
+
+.slider-btn-prev, .slider-btn-next {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    align-self: center;
+    background: #fff;
+    box-shadow: 0 2px 4px 1px rgba(0, 0, 0, .2);
+    color: var(--red);
+    cursor: pointer;
+}
+
+.slider-btn-next::after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font: var(--fa-font-solid);
+    content: "\f061";
+    font-size: 25px;
+}
+
+.slider-btn-prev::after {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    font: var(--fa-font-solid);
+    content: "\f060";
+    font-size: 25px;
+}
