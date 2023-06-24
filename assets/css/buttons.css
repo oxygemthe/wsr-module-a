@@ -20,3 +20,22 @@
 .btn:focus-visible {
     outline: none;
 }
+
+.btn.secondary {
+    border: none;
+    font-size: 16px;
+    font-weight: 600;
+    background: #eeeeee;
+    color: #8a8a8a;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .3s all;
+    box-shadow: 0 0 4px 1px #cecece;
+    padding: 10px 15px;
+}
+
+.btn.secondary:hover {
+    transform: translateY(4px);
+    text-shadow: 0 4px 4px rgba(255, 255, 255, 0.4);
+    background: #e3e3e3;
+}
