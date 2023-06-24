@@ -10,6 +10,12 @@ main .container {
     gap: 30px;
 }
 
+@media (max-width: 991px) {
+    main .container {
+        grid-template-columns: 1fr;
+    }
+}
+
 .profile {
     display: grid;
     grid-row-gap: 5px;
