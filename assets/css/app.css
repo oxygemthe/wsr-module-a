@@ -179,6 +179,7 @@ form h1 {
 
 form .prompt {
     color: #9f9f9f;
+    margin-bottom: 10px;
 }
 
 form .form-group {
@@ -207,6 +208,19 @@ form .form-group input:not([type=checkbox], [type=radio]) {
     border: 1px solid var(--light-gray);
     transition: .3s all;
 }
+
+form .form-group select {
+    font-size: 16px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px 15px;
+    border: 1px solid var(--light-gray);
+    transition: .3s all;
+}
+form .form-group select:focus-visible {
+    outline: none;
+}
+
 
 form .form-group input:not([type=checkbox], [type=radio]):focus-visible {
     outline: none;

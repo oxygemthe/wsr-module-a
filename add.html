@@ -2,9 +2,9 @@
 <html lang="ru">
 <head>
     <meta charset="UTF-8">
-    <title>Страница регистрации в личном кабинете</title>
+    <title>Страница добавления информации о найденном животном</title>
     <link rel="stylesheet" href="assets/css/app.css">
-    <link rel="stylesheet" href="assets/css/login.css">
+    <link rel="stylesheet" href="assets/css/add.css">
     <script src="assets/js/app.js" type="application/javascript"></script>
     <script src="assets/icons/js/all.min.js" type="application/javascript"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -63,33 +63,71 @@
 <main>
     <div class="container">
         <form>
-            <h1>Регистрация</h1>
+            <h1>Добавление объявления</h1>
             <div class="prompt">
-                Заполните все обязательные поля, чтобы выполнить регистрацию на сайте.
+                Заполните все обязательные поля, чтобы добавить новое объявление.
             </div>
             <div class="form-group">
-                <label class="required">Email</label>
+                <label class="required">Ваш email</label>
                 <input type="email" name="email" required>
             </div>
             <div class="form-group">
-                <label class="required">Имя</label>
-                <input type="text" name="firstname" required>
+                <label>Зарегистрироваться на сайте?</label>
+                <div class="form-group">
+                    <label>
+                        <input id="register" type="radio" name="auth" value="1" checked>
+                        Да
+                    </label>
+                    <label>
+                        <input type="radio" name="auth" value="0">
+                        Нет
+                    </label>
+                    <div class="form-group passwords">
+                        <div class="form-group">
+                            <label class="required">Пароль</label>
+                            <input type="password" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="required">Повторите пароль</label>
+                            <input type="password" required>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div class="form-group">
-                <label class="required">Фамилия</label>
-                <input type="text" name="lastname" required>
+                <label class="required">Вид животного</label>
+                <select required>
+                    <option>Выберете из списка</option>
+                    <option>Кошка</option>
+                    <option>Собака</option>
+                    <option>Хорёк</option>
+                    <option>Вомбат</option>
+                </select>
             </div>
             <div class="form-group">
-                <label class="required">Телефон</label>
-                <input type="tel" name="phone" required>
+                <label class="required">Доп. информация</label>
+                <input type="text" name="text" required>
             </div>
             <div class="form-group">
-                <label class="required">Пароль</label>
-                <input type="password" name="password">
+                <label>Клеймо</label>
+                <input type="text" name="text">
             </div>
             <div class="form-group">
-                <label class="required">Повторите пароль</label>
-                <input type="password" name="password_confirmation">
+                <label class="required">Район</label>
+                <select required>
+                    <option>Район</option>
+                    <option>Ленинский р-н</option>
+                    <option>Калининский р-н</option>
+                    <option>Московский р-н</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Дата находки</label>
+                <input type="date" name="text" required>
+            </div>
+            <div class="form-group">
+                <label class="required">Фотографии (не более трёх)</label>
+                <input type="file" name="files[]" multiple required>
             </div>
             <div class="form-group">
                 <label class="required">
@@ -98,8 +136,8 @@
                 </label>
             </div>
             <div class="form-group">
-                <button type="submit" class="btn">
-                    Зарегистрироваться
+                <button type="submit" class="btn fit">
+                    Добавить!
                 </button>
             </div>
         </form>
