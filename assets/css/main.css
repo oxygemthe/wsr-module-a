@@ -206,7 +206,7 @@ h1 {
 .mail form input[type=email] {
     height: 40px;
     padding: 5px 15px;
-    box-shadow: 0 4px 4px 2px rgba(0, 0, 0, .1);
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, .1);
     border-radius: 8px;
     background: #fff;
     border: none;

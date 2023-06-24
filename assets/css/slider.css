@@ -17,8 +17,9 @@
 }
 
 @media (min-width: 992px) and (max-width: 1183px) {
-    .slider .slider-wrapper .slide:nth-child(-n + 1) {
-        display: none;
+    .slider .slider-wrapper .slide {
+        width: calc(100% / 3);
+        flex-grow: 0;
     }
 }
 
@@ -36,6 +37,7 @@
 
 .slider .slide {
     display: block;
+    width: 300px;
     padding: 10px;
 }
 
