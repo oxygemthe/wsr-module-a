@@ -3,12 +3,12 @@
     font-size: 16px;
     font-weight: 600;
     background: var(--red);
-    padding: 10px 0;
     color: #fff;
     border-radius: 8px;
     cursor: pointer;
     transition: .3s all;
     box-shadow: 0 0 4px 1px #ff6c6c;
+    padding: 10px 15px;
 }
 
 .btn:hover {
