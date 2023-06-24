@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница регистрации в личном кабинете</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/login.css">
+    <script src="assets/js/app.js" type="application/javascript"></script>
+    <script src="assets/icons/js/all.min.js" type="application/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- Шапка -->
+<header>
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="assets/img/logo.svg" alt="Logo"/>
+            <div class="header">
+                <div>Новая</div>
+                <div>Жизнь</div>
+            </div>
+        </a>
+        <ul class="links">
+            <li>
+                <a href="/search.html" class="link">Поиск</a>
+            </li>
+            <li>
+                <a href="/register.html" class="link">Регистрация</a>
+            </li>
+            <li>
+                <a href="/profile.html" class="link">Личный кабинет</a>
+            </li>
+            <li>
+                <a href="/add.html" class="link">Добавить</a>
+            </li>
+            <li>
+                <a href="/" class="link">Отзывы</a>
+            </li>
+        </ul>
+        <div class="responsive">
+            <button type="button" class="open-menu"></button>
+        </div>
+    </div>
+    <ul class="responsive-links">
+        <li>
+            <a href="#" class="link">Поиск</a>
+        </li>
+        <li>
+            <a href="#" class="link">Регистрация</a>
+        </li>
+        <li>
+            <a href="#" class="link">Личный кабинет</a>
+        </li>
+        <li>
+            <a href="#" class="link">Добавить</a>
+        </li>
+        <li>
+            <a href="#" class="link">Отзывы</a>
+        </li>
+    </ul>
+</header>
+<!-- Форма -->
+<main>
+    <div class="container">
+        <form>
+            <h1>Регистрация</h1>
+            <div class="prompt">
+                Заполните все обязательные поля, чтобы выполнить регистрацию на сайте.
+            </div>
+            <div class="form-group">
+                <label class="required">Email</label>
+                <input type="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label class="required">Имя</label>
+                <input type="text" name="firstname" required>
+            </div>
+            <div class="form-group">
+                <label class="required">Фамилия</label>
+                <input type="text" name="lastname" required>
+            </div>
+            <div class="form-group">
+                <label class="required">Телефон</label>
+                <input type="tel" name="phone" required>
+            </div>
+            <div class="form-group">
+                <label class="required">Пароль</label>
+                <input type="password" name="password">
+            </div>
+            <div class="form-group">
+                <label class="required">Повторите пароль</label>
+                <input type="password" name="password_confirmation">
+            </div>
+            <div class="form-group">
+                <label class="required">
+                    <input type="checkbox" name="agreement">
+                    Я согласен на обработку персональных данных
+                </label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">
+                    Зарегистрироваться
+                </button>
+            </div>
+        </form>
+    </div>
+</main>
+<!-- Подвал -->
+<footer>
+    <div class="container">
+        <section class="logo-links">
+            <a href="/" class="logo">
+                <img src="assets/img/logo.svg" alt="Logo"/>
+                <div class="header">
+                    <div>Новая</div>
+                    <div>Жизнь</div>
+                </div>
+            </a>
+            <div class="navigation">
+                <div class="highlight">Навигация по сайту</div>
+                <ul class="nav">
+                    <li class="nav-link">
+                        <a href="/" class="link">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/register.html" class="link">
+                            Регистрация
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/login.html" class="link">
+                            Авторизация
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/profile.html" class="link">
+                            Личный кабинет
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/" class="link">
+                            Найдено животное
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/search.html" class="link">
+                            Поиск
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <a href="tel:+78001234567">
+                    <div class="highlight">Телефон:</div>
+                    8 (800) 123-45-67
+                </a>
+                <a href="mailto:mail@newlife.ru">
+                    <div class="highlight">Почта:</div>
+                    mail@newlife.ru
+                </a>
+            </div>
+        </section>
+        <section class="copyright">
+            Copyright &copy; 2023 «Новая жизнь». Помощь и поиск потерянных животных в г. Оренбург
+        </section>
+    </div>
+</footer>
+</body>
+</html>

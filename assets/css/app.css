@@ -11,7 +11,7 @@
     --red: #de000e;
     --dark-red: #c7000d;
     --light-red: #ff6c6c;
-    --light-gray: #424242;
+    --light-gray: #e3e3e3;
     --xl-max: 1183px;
     --xl-min: 992px;
     --l-max: 991px;
@@ -37,6 +37,7 @@ body {
 header {
     padding: 20px 0;
     background: #fff;
+    max-height: 60px;
 }
 
 header .container {
@@ -161,8 +162,64 @@ header .responsive-links.opened {
     }
 }
 
+/* Форма */
+form {
+    display: grid;
+    grid-row-gap: 5px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px 2px rgba(0, 0, 0, .1);
+}
+
+form h1 {
+    text-align: center;
+    margin: 0 0 10px;
+}
+
+form .prompt {
+    color: #9f9f9f;
+}
+
+form .form-group {
+    display: grid;
+    grid-row-gap: 2px;
+}
+
+form .form-group label {
+    color: #000;
+    font-size: 14px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+
+form .form-group label.required::after {
+    position: absolute;
+    color: var(--red);
+    content: "*";
+}
+
+form .form-group input:not([type=checkbox], [type=radio]) {
+    font-size: 16px;
+    background: #fff;
+    border-radius: 6px;
+    padding: 10px 15px;
+    border: 1px solid var(--light-gray);
+    transition: .3s all;
+}
+
+form .form-group input:not([type=checkbox], [type=radio]):focus-visible {
+    outline: none;
+    box-shadow: 0 0 4px 1px rgba(131, 131, 131, 0.4);
+}
+
+form .form-group label:has(input[type=checkbox]) {
+    padding: 10px 0;
+    margin-left: 0;
+}
+
 footer {
-    margin-top: 30px;
+    margin-top: auto;
     padding: 30px 0;
     background: #ffffff;
 }
@@ -199,6 +256,7 @@ footer .logo-links {
     footer .logo {
         margin: auto auto 10px;
     }
+
     footer .logo-links {
         flex-flow: column;
         justify-content: center;
