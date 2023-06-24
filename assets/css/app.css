@@ -182,25 +182,25 @@ form .prompt {
     margin-bottom: 10px;
 }
 
-form .form-group {
+.form-group {
     display: grid;
     grid-row-gap: 2px;
 }
 
-form .form-group label {
+.form-group label {
     color: #000;
     font-size: 14px;
     font-weight: 700;
     margin-left: 5px;
 }
 
-form .form-group label.required::after {
+.form-group label.required::after {
     position: absolute;
     color: var(--red);
     content: "*";
 }
 
-form .form-group input:not([type=checkbox], [type=radio]) {
+.form-group input:not([type=checkbox], [type=radio]) {
     font-size: 16px;
     background: #fff;
     border-radius: 6px;
@@ -209,7 +209,7 @@ form .form-group input:not([type=checkbox], [type=radio]) {
     transition: .3s all;
 }
 
-form .form-group select {
+.form-group select {
     font-size: 16px;
     background: #fff;
     border-radius: 6px;
@@ -217,17 +217,16 @@ form .form-group select {
     border: 1px solid var(--light-gray);
     transition: .3s all;
 }
-form .form-group select:focus-visible {
+.form-group select:focus-visible {
     outline: none;
 }
 
-
-form .form-group input:not([type=checkbox], [type=radio]):focus-visible {
+.form-group input:not([type=checkbox], [type=radio]):focus-visible {
     outline: none;
     box-shadow: 0 0 4px 1px rgba(131, 131, 131, 0.4);
 }
 
-form .form-group label:has(input[type=checkbox]) {
+.form-group label:has(input[type=checkbox]) {
     padding: 10px 0;
     margin-left: 0;
 }

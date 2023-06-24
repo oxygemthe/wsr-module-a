@@ -62,7 +62,7 @@ main .container {
 
 .desks .cards {
     display: grid;
-    grid-template-columns: repeat(2, minmax(200px, 300px));
+    grid-template-columns: repeat(3, minmax(200px, 300px));
     gap: 15px;
 }
 
@@ -107,6 +107,8 @@ main .container {
 .desks .card .buttons button {
     padding: 5px 10px;
     background: #fcfcfc;
+    font-weight: 400;
+    font-size: 14px;
 }
 
 .desks .card .buttons button:hover {
@@ -118,4 +120,15 @@ main .container {
     flex-flow: row wrap;
     gap: 10px;
     margin-top: 10px;
+}
+
+.sort {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.desks .cards .card select {
+    padding: 5px 10px;
+    font-size: 14px;
 }
