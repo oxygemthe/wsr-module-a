@@ -19,7 +19,7 @@
 .search .blocks {
     display: grid;
     grid-template-columns: 70% auto;
-    gap: 10px;
+    gap: 15px;
 }
 
 @media (max-width: 768px) {
@@ -32,6 +32,7 @@
     text-align: end;
     color: #fff;
     font-size: 28px;
+    align-self: center;
 }
 
 @media (max-width: 991px) {
@@ -94,6 +95,7 @@
     display: grid;
     grid-row-gap: 10px;
     margin-top: 20px;
+    background: #fafafa;
 }
 
 .search .full-search select, .search .full-search input {
@@ -119,6 +121,10 @@
 
 .search .full-search .btn:hover {
     background: #d73d3d;
+}
+
+.search-results {
+    background: #ffffff;
 }
 
 h1 {
@@ -175,10 +181,11 @@ h1 {
 }
 
 .cards {
-    display: flex;
-    flex-flow: row wrap;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
-    gap: 10px;
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
     overflow: hidden;
 }
 

@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html lang="html">
+<head>
+    <meta charset="UTF-8">
+    <title>Страница с результатами поиска животных</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="assets/js/app.js" type="application/javascript"></script>
+    <script src="assets/icons/js/all.min.js" type="application/javascript"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!-- Шапка -->
+<header>
+    <div class="container">
+        <a href="/" class="logo">
+            <img src="assets/img/logo.svg" alt="Logo"/>
+            <div class="header">
+                <div>Новая</div>
+                <div>Жизнь</div>
+            </div>
+        </a>
+        <ul class="links">
+            <li>
+                <a href="/search.html" class="link">Поиск</a>
+            </li>
+            <li>
+                <a href="/register.html" class="link">Регистрация</a>
+            </li>
+            <li>
+                <a href="/profile.html" class="link">Личный кабинет</a>
+            </li>
+            <li>
+                <a href="/add.html" class="link">Добавить</a>
+            </li>
+            <li>
+                <a href="/" class="link">Отзывы</a>
+            </li>
+        </ul>
+        <div class="responsive">
+            <button type="button" class="open-menu"></button>
+        </div>
+    </div>
+    <ul class="responsive-links">
+        <li>
+            <a href="#" class="link">Поиск</a>
+        </li>
+        <li>
+            <a href="#" class="link">Регистрация</a>
+        </li>
+        <li>
+            <a href="#" class="link">Личный кабинет</a>
+        </li>
+        <li>
+            <a href="#" class="link">Добавить</a>
+        </li>
+        <li>
+            <a href="#" class="link">Отзывы</a>
+        </li>
+    </ul>
+</header>
+<!-- Контент -->
+<main>
+    <section class="search">
+        <div class="container">
+            <h1>Поиск животных</h1>
+            <div class="blocks">
+                <form class="full-search">
+                    <select>
+                        <option>Район</option>
+                        <option>Ленинский р-н</option>
+                        <option>Калининский р-н</option>
+                        <option>Московский р-н</option>
+                    </select>
+                    <select>
+                        <option>Вид</option>
+                        <option>Кошка</option>
+                        <option>Собака</option>
+                        <option>Хорёк</option>
+                        <option>Вомбат</option>
+                    </select>
+                    <input type="text" placeholder="Кошка, собака...">
+                    <button type="button" class="btn">
+                        Найти!
+                    </button>
+                </form>
+                <div class="text">
+                    Укажите все характеристики вашего питомца, чтобы найти его!
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="search-results">
+        <div class="container">
+            <h1>Результаты поиска</h1>
+            <div class="cards">
+                <div class="card">
+                    <img class="card-img" src="assets/img/sliders/found/1.jpg" alt="Card">
+                    <div class="area">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ленинский р-н
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        +7 (925) 745-89-56
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user-secret"></i>
+                        Гость
+                    </div>
+                    <div class="date">
+                        Найден:
+                        21.06.2023
+                    </div>
+                    <button type="button" class="btn">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="assets/img/sliders/found/2.jpg" alt="Card">
+                    <div class="area">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Калининский р-н
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        +7 (964) 657-82-01
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        Юлия
+                    </div>
+                    <div class="date">
+                        Найден:
+                        19.06.2023
+                    </div>
+                    <button type="button" class="btn">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="assets/img/sliders/found/3.jpg" alt="Card">
+                    <div class="area">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ленинский р-н
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        +7 (912) 975-45-25
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        Андрей
+                    </div>
+                    <div class="date">
+                        Найден:
+                        24.06.2023
+                    </div>
+                    <button type="button" class="btn">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="assets/img/sliders/found/4.jpg" alt="Card">
+                    <div class="area">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ленинский р-н
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        +7 (912) 975-45-25
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        Андрей
+                    </div>
+                    <div class="date">
+                        Найден:
+                        24.06.2023
+                    </div>
+                    <button type="button" class="btn">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="assets/img/sliders/found/5.jpeg" alt="Card">
+                    <div class="area">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ленинский р-н
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        +7 (912) 975-45-25
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        Андрей
+                    </div>
+                    <div class="date">
+                        Найден:
+                        24.06.2023
+                    </div>
+                    <button type="button" class="btn">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="assets/img/sliders/found/6.jpg" alt="Card">
+                    <div class="area">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ленинский р-н
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        +7 (912) 975-45-25
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        Андрей
+                    </div>
+                    <div class="date">
+                        Найден:
+                        24.06.2023
+                    </div>
+                    <button type="button" class="btn">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="assets/img/sliders/found/1.jpg" alt="Card">
+                    <div class="area">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ленинский р-н
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        +7 (925) 745-89-56
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user-secret"></i>
+                        Гость
+                    </div>
+                    <div class="date">
+                        Найден:
+                        21.06.2023
+                    </div>
+                    <button type="button" class="btn">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="assets/img/sliders/found/2.jpg" alt="Card">
+                    <div class="area">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Калининский р-н
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        +7 (964) 657-82-01
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        Юлия
+                    </div>
+                    <div class="date">
+                        Найден:
+                        19.06.2023
+                    </div>
+                    <button type="button" class="btn">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="assets/img/sliders/found/3.jpg" alt="Card">
+                    <div class="area">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ленинский р-н
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        +7 (912) 975-45-25
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        Андрей
+                    </div>
+                    <div class="date">
+                        Найден:
+                        24.06.2023
+                    </div>
+                    <button type="button" class="btn">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="assets/img/sliders/found/4.jpg" alt="Card">
+                    <div class="area">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ленинский р-н
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        +7 (912) 975-45-25
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        Андрей
+                    </div>
+                    <div class="date">
+                        Найден:
+                        24.06.2023
+                    </div>
+                    <button type="button" class="btn">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="assets/img/sliders/found/5.jpeg" alt="Card">
+                    <div class="area">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ленинский р-н
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        +7 (912) 975-45-25
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        Андрей
+                    </div>
+                    <div class="date">
+                        Найден:
+                        24.06.2023
+                    </div>
+                    <button type="button" class="btn">
+                        Подробнее
+                    </button>
+                </div>
+                <div class="card">
+                    <img class="card-img" src="assets/img/sliders/found/6.jpg" alt="Card">
+                    <div class="area">
+                        <i class="fa-solid fa-location-dot"></i>
+                        Ленинский р-н
+                    </div>
+                    <div class="phone">
+                        <i class="fa-solid fa-phone"></i>
+                        +7 (912) 975-45-25
+                    </div>
+                    <div class="user">
+                        <i class="fa-solid fa-user"></i>
+                        Андрей
+                    </div>
+                    <div class="date">
+                        Найден:
+                        24.06.2023
+                    </div>
+                    <button type="button" class="btn">
+                        Подробнее
+                    </button>
+                </div>
+            </div>
+            <section class="pagination">
+                <button type="button">
+                    <i class="fa-solid fa-chevron-left fa-xs"></i>
+                </button>
+                <button type="button">
+                    1
+                </button>
+                <button type="button">
+                    2
+                </button>
+                <button type="button">
+                    3
+                </button>
+                <button type="button">
+                    <i class="fa-solid fa-chevron-right fa-xs"></i>
+                </button>
+            </section>
+        </div>
+    </section>
+</main>
+<!-- Подвал -->
+<footer>
+    <div class="container">
+        <section class="logo-links">
+            <div class="navigation">
+                <div class="highlight">Навигация по сайту</div>
+                <ul class="nav">
+                    <li class="nav-link">
+                        <a href="/" class="link">
+                            Главная
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/register.html" class="link">
+                            Регистрация
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/login.html" class="link">
+                            Авторизация
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/profile.html" class="link">
+                            Личный кабинет
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/" class="link">
+                            Найдено животное
+                        </a>
+                    </li>
+                    <li class="nav-link">
+                        <a href="/search.html" class="link">
+                            Поиск
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="contact">
+                <a href="tel:+78001234567">
+                    <div class="highlight">Телефон:</div>
+                    8 (800) 123-45-67
+                </a>
+                <a href="mailto:mail@newlife.ru">
+                    <div class="highlight">Почта:</div>
+                    mail@newlife.ru
+                </a>
+            </div>
+        </section>
+        <section class="copyright">
+            Copyright &copy; 2023 «Новая жизнь». Помощь и поиск потерянных животных в г. Оренбург
+        </section>
+    </div>
+</footer>
+</body>
+</html>
