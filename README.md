@@ -3,4 +3,4 @@
 <p>Все, что тут есть — просто для демки)</p>
 <p>Если вам очееееень интересно, что это, пишите в личку</p>
 
-<h2 align="center">[Глянуть сайтик](https://oxygemthe.github.io/wsr-module-a/)</h2>
+<h2 align="center"><a href="https://oxygemthe.github.io/wsr-module-a/">Глянуть сайтик</a></h2>
