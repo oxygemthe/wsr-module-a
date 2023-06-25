@@ -23,14 +23,14 @@ form button {
     margin-top: 10px;
 }
 
-form .passwords {
+.password-fields {
     display: none;
     background: #eeeeee;
     padding: 10px 15px;
     border-radius: 8px;
+    transition: .3s all;
 }
 
-/*
-    TODO: я хз как сделать через css, отображение формы для пароля
-    display: none; - ?
-*/
+form:has(input[type=radio][name=registration][value=yes]:checked) .password-fields {
+    display: grid;
+}
